@@ -91,5 +91,5 @@ type UseCounterTextHookType = {
 
 export const useCounterText = (): UseCounterTextHookType => {
   const { state: {text }, handleTextInput } = useContext(CounterContext);
-  return { text, handleTextInput}
+   return { text, handleTextInput}
 }
