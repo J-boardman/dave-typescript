@@ -1,13 +1,8 @@
-import { CounterProvider, initState } from './context/CounterContext'
-import Counter from './Counter'
-
-function App() {
+export default () => {
 
   return (
-    <CounterProvider count={initState.count} text={initState.text}>
-      <Counter>{(num: number) => <>Current Count: {num}</>}</Counter>
-    </CounterProvider>
+    <div className="App">
+      
+    </div>
   )
 }
-
-export default App
