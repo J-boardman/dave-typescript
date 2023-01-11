@@ -39,7 +39,7 @@ export const ProductsProvider = ({ children }: ChildrenType): ReactElement => {
 
   useEffect(() => {
     const fetchProducts = async(): Promise<ProductType[]> => {
-      const data = await fetch(`http://localhost:3500/products`)
+      const data = await fetch('http://localhost:3500/products')
         .then(res => res.json())
         .catch(err => {
           if(err instanceof Error) console.log(err.message)
@@ -49,7 +49,6 @@ export const ProductsProvider = ({ children }: ChildrenType): ReactElement => {
     }
 
     fetchProducts().then(products => setProducts(products))
-
   }, []);
 
   return (
